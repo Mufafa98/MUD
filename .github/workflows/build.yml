@@ -24,7 +24,7 @@ jobs:
       - name: Build with Gradle
         run: |
           chmod +x ./gradlew
-          ./gradlew build
+          ./gradlew build -Dorg.gradle.java.home=$JAVA_HOME
           
       - name: Extract Version
         id: version
